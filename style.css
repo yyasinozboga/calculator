@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Utils */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: grid;
+  place-items: center;
+  font-size: 50px;
+  font-weight: 500;
+  background-color: var(--btn-bg-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+
+/* Colors */
+:root {
+  --text-color: #ffffff;
+  --total-bg-color: #333333;
+  --btnGroup-bg-color: #1f1f1f;
+  --btn-bg-color: #4d4d4d;
+  --mathBtn-bg-color: #fda01a;
+}
+
+/* Container */
+.container {
+  width: 470px;
+}
+
+/* Header */
+.header {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-color: var(--total-bg-color);
+}
+
+.total {
+  color: var(--text-color);
+  font-size: 60px;
+}
+
+/* Btn Group */
+.btn-group {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  background-color: var(--btnGroup-bg-color);
+}
+
+/* Math Btn */
+.math-btn {
+  background-color: var(--mathBtn-bg-color);
+}
+
+.math-btn:hover {
+  background-color: hsl(35, 100%, 65%) !important;
+}
+
+.math-btn:active {
+  background-color: hsl(35, 100%, 75%) !important;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.active {
+  pointer-events: auto;
+}
